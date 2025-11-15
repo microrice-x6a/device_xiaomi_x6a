@@ -381,6 +381,7 @@ if [ -f /system/phh/secure ];then
 
     resetprop ro.adb.secure 0
     setprop ctl.restart adbd
+    setprop persist.sys.usb.config adb
 fi
 
 if getprop ro.boot.boot_devices |grep -v , |grep -qE .;then
