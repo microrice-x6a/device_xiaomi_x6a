@@ -26,12 +26,15 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 	ro.build.version.release=$(PLATFORM_VERSION) \
 	ro.build.version.security_patch=$(PLATFORM_SECURITY_PATCH) \
 	ro.adb.secure=0 \
+	ro.debuggable=1 \
+	ro.secure=0 \
+	persist.sys.usb.config=mtp,adb \
 	ro.logd.auditd=true
 	
 #Huawei HiSuite (also other OEM custom programs I guess) it's of no use in AOSP builds
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 	persist.sys.usb.config=adb \
-	ro.cust.cdrom=/dev/null	
+	ro.cust.cdrom=/dev/null
 
 #VNDK config files
 PRODUCT_COPY_FILES += \
@@ -45,7 +48,7 @@ PRODUCT_COPY_FILES += \
 
 # LineageOS build may need this to make NFC work
 PRODUCT_PACKAGES += \
-        NfcNci  
+        NfcNci
 
 PRODUCT_COPY_FILES += \
 	device/xiaomi/x6a/rw-system.sh:system/bin/rw-system.sh \

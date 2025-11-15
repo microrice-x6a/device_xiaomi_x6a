@@ -374,7 +374,7 @@ if [ -f /system/phh/secure ];then
     resetprop ro.boot.veritymode enforcing
     resetprop ro.boot.warranty_bit 0
     resetprop ro.warranty_bit 0
-    resetprop ro.debuggable 0
+    resetprop ro.debuggable 1
     resetprop ro.secure 1
     resetprop ro.build.type user
     resetprop ro.build.selinux 0
