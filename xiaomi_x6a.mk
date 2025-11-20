@@ -17,5 +17,4 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi Smart Home Display 6
 PRODUCT_MANUFACTURER := Xiaomi
 
-PRODUCT_PACKAGES += \
-    x6a_remove_packages
+PRODUCT_PACKAGES += 
