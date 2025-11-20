@@ -9,6 +9,7 @@ LOCAL_OVERRIDES_PACKAGES := \
     ExactCalculator \
     Email \
     Exchange2 \
+    com.android.emailcommon \
     Calendar \
     CarrierDefaultApp \
     SimAppDialog \
