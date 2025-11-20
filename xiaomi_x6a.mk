@@ -9,6 +9,12 @@ $(call inherit-product, $(LOCAL_PATH)/vendor_prop.mk)
 
 
 
+PRODUCT_COPY_FILES += \
+	device/xiaomi/x6a/init.x6a.rc:system/etc/init/init.x6a.rc \
+	device/xiaomi/x6a/preinstall/LocalSend-1.17.0.apk:system/preinstall/LocalSend-1.17.0.apk \
+	device/xiaomi/x6a/preinstall/preinstall.sh:system/bin/preinstall.sh \
+	device/xiaomi/x6a/preinstall/Lawnchair-1.2.0.1884.apk:system/preinstall/Lawnchair-1.2.0.1884.apk
+
 TARGET_BOOT_ANIMATION_RES := 480
 
 PRODUCT_NAME := xiaomi_x6a
