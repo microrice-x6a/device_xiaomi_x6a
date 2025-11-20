@@ -6,17 +6,6 @@ $(call inherit-product, $(LOCAL_PATH)/base.mk)
 $(call inherit-product, $(LOCAL_PATH)/lineage.mk)
 $(call inherit-product, $(LOCAL_PATH)/vendor_prop.mk)
 
-PRODUCT_PACKAGES += \
-    x6a-preinstall \
-    x6a_preinstall_localsend \
-    x6a_preinstall_lawnchair
-
-PRODUCT_PACKAGES += \
-
-
-PRODUCT_COPY_FILES += \
-	device/xiaomi/x6a/init.x6a.rc:system/etc/init/init.x6a.rc
-
 TARGET_BOOT_ANIMATION_RES := 480
 
 PRODUCT_NAME := xiaomi_x6a
