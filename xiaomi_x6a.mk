@@ -1,5 +1,21 @@
-$(call inherit-product, device/phh/treble/treble_a64_bvN.mk)
+##
+##$(call inherit-product, device/phh/treble/base-pre.mk)
+
+include build/make/target/product/treble_common.mk
+$(call inherit-product, vendor/vndk/vndk32.mk)
+$(call inherit-product, $(LOCAL_PATH)/base.mk)
+
+$(call inherit-product, $(LOCAL_PATH)/lineage.mk)
+
+
+
+
+
+
 $(call inherit-product, $(LOCAL_PATH)/vendor_prop.mk)
+
+
+
 
 TARGET_BOOT_ANIMATION_RES := 480
 
