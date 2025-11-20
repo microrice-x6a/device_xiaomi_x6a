@@ -6,12 +6,6 @@ $(call inherit-product, vendor/vndk/vndk32.mk)
 $(call inherit-product, $(LOCAL_PATH)/base.mk)
 
 $(call inherit-product, $(LOCAL_PATH)/lineage.mk)
-
-
-
-
-
-
 $(call inherit-product, $(LOCAL_PATH)/vendor_prop.mk)
 
 
@@ -24,5 +18,7 @@ PRODUCT_DEVICE := x6a_a64_ab
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi Smart Home Display 6
 PRODUCT_MANUFACTURER := Xiaomi
+
+PRODUCT_PACKAGES -= TeleService CarrierConfig TelephonyProvider MmsService CellBroadcastReceiver InCallUI Stk
 
 PRODUCT_PACKAGES +=
