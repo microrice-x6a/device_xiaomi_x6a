@@ -1,5 +1,3 @@
-##
-##$(call inherit-product, device/phh/treble/base-pre.mk)
 
 include build/make/target/product/treble_common.mk
 $(call inherit-product, vendor/vndk/vndk32.mk)
@@ -19,6 +17,17 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi Smart Home Display 6
 PRODUCT_MANUFACTURER := Xiaomi
 
-PRODUCT_PACKAGES -= TeleService CarrierConfig TelephonyProvider MmsService CellBroadcastReceiver InCallUI Stk
+PRODUCT_REMOVE_PACKAGES += \
+    messaging \
+    ExactCalculator \
+    Email \
+    Exchange2 \
+    Calendar \
+    CarrierDefaultApp \
+    SimAppDialog \
+    WAPPushManager \
+    SecureElement \
+    BlockedNumberProvider \
+    CallLogBackup
 
-PRODUCT_PACKAGES +=
+### PRODUCT_PACKAGES +=
