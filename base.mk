@@ -42,8 +42,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
 	device/xiaomi/x6a/rw-system.sh:system/bin/rw-system.sh \
-	device/phh/treble/phh-prop-handler.sh:system/bin/phh-prop-handler.sh \
-	device/phh/treble/fixSPL/getSPL.arm:system/bin/getSPL
+	device/phh/treble/phh-prop-handler.sh:system/bin/phh-prop-handler.sh
 
 PRODUCT_COPY_FILES += \
 	device/phh/treble/empty:system/phh/empty \
