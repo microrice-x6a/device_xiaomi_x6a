@@ -41,7 +41,7 @@ PRODUCT_COPY_FILES += \
 	frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:system/etc/usb_audio_policy_configuration.xml
 
 PRODUCT_COPY_FILES += \
-	device/phh/treble/rw-system.sh:system/bin/rw-system.sh \
+	device/xiaomi/x6a/rw-system.sh:system/bin/rw-system.sh \
 	device/phh/treble/phh-prop-handler.sh:system/bin/phh-prop-handler.sh \
 	device/phh/treble/fixSPL/getSPL.arm:system/bin/getSPL
 
