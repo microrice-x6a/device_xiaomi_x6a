@@ -17,17 +17,5 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi Smart Home Display 6
 PRODUCT_MANUFACTURER := Xiaomi
 
-PRODUCT_REMOVE_PACKAGES += \
-    messaging \
-    ExactCalculator \
-    Email \
-    Exchange2 \
-    Calendar \
-    CarrierDefaultApp \
-    SimAppDialog \
-    WAPPushManager \
-    SecureElement \
-    BlockedNumberProvider \
-    CallLogBackup
-
-### PRODUCT_PACKAGES +=
+PRODUCT_PACKAGES += \
+    x6a_remove_packages
