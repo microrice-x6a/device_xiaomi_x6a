@@ -1,10 +1,8 @@
-service preinstall /system/bin/sh /system/bin/preinstall.sh
-    class late_start
-    user system
-    group system
-    disabled
-    oneshot
 
 on property:sys.boot_completed=1
-    start preinstall
+    start x6a_preinstall
 
+service x6a_preinstall /system/bin/x6a-preinstall
+    class late_start
+    disabled
+    oneshot

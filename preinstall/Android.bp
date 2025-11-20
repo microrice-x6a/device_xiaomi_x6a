@@ -1,0 +1,15 @@
+
+prebuilt_etc {
+    name: "x6a_preinstall_localsend",
+    src: "LocalSend-1.17.0.apk",
+    sub_dir: "preinstall",
+    filename_from_src: true,
+}
+
+prebuilt_etc {
+    name: "x6a_preinstall_lawnchair",
+    src: "Lawnchair-1.2.0.1884.apk",
+    sub_dir: "preinstall",
+    filename_from_src: true,
+}
+
